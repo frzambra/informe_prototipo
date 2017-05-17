@@ -26,7 +26,7 @@
 <meta name="author" content="SmartCrop">
 
 
-<meta name="date" content="2017-05-01">
+<meta name="date" content="2017-05-15">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -34,7 +34,7 @@
   
   
 <link rel="prev" href="indicesVeg.html">
-
+<link rel="next" href="compoIma.html">
 
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -50,6 +50,18 @@
 
 
 <script src="libs/htmlwidgets-0.8/htmlwidgets.js"></script>
+<link href="libs/leaflet-0.7.7/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-0.7.7/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<link href="libs/leaflet-label-0.2.2/leaflet.label.css" rel="stylesheet" />
+<script src="libs/leaflet-label-0.2.2/leaflet.label.js"></script>
+<script src="libs/Proj4Leaflet-0.7.2/proj4-compressed.js"></script>
+<script src="libs/Proj4Leaflet-0.7.2/proj4leaflet.js"></script>
+<script src="libs/leaflet-binding-1.1.0.9000/leaflet.js"></script>
+<link href="libs/draw-0.1.0/leaflet.draw.css" rel="stylesheet" />
+<script src="libs/draw-0.1.0/leaflet.draw-src.js"></script>
+<script src="libs/draw-0.1.0/Leaflet.draw.drag-src.js"></script>
+<script src="libs/draw-0.1.0/draw-bindings.js"></script>
 <script src="libs/proj4js-2.3.15/proj4.js"></script>
 <link href="libs/highcharts-5.0.6/css/motion.css" rel="stylesheet" />
 <script src="libs/highcharts-5.0.6/highstock.js"></script>
@@ -101,34 +113,26 @@
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Resumen</a></li>
 <li class="chapter" data-level="2" data-path="DescripcionVIs.html"><a href="DescripcionVIs.html"><i class="fa fa-check"></i><b>2</b> Descripción Índices Vegetacionales</a></li>
-<li class="chapter" data-level="3" data-path="compoIma.html"><a href="compoIma.html"><i class="fa fa-check"></i><b>3</b> Composición de imágenes</a><ul>
-<li class="chapter" data-level="3.1" data-path="compoIma.html"><a href="compoIma.html#fundo-rondadero"><i class="fa fa-check"></i><b>3.1</b> Fundo Rondadero</a></li>
-<li class="chapter" data-level="3.2" data-path="compoIma.html"><a href="compoIma.html#predios-fernando-rueda"><i class="fa fa-check"></i><b>3.2</b> Predios Fernando Rueda</a><ul>
-<li class="chapter" data-level="3.2.1" data-path="compoIma.html"><a href="compoIma.html#predio-1"><i class="fa fa-check"></i><b>3.2.1</b> Predio 1</a></li>
-<li class="chapter" data-level="3.2.2" data-path="compoIma.html"><a href="compoIma.html#predio-2"><i class="fa fa-check"></i><b>3.2.2</b> Predio 2</a></li>
-<li class="chapter" data-level="3.2.3" data-path="compoIma.html"><a href="compoIma.html#predio-3"><i class="fa fa-check"></i><b>3.2.3</b> Predio 3</a></li>
-<li class="chapter" data-level="3.2.4" data-path="compoIma.html"><a href="compoIma.html#predio-4"><i class="fa fa-check"></i><b>3.2.4</b> Predio 4</a></li>
-<li class="chapter" data-level="3.2.5" data-path="compoIma.html"><a href="compoIma.html#predio-5"><i class="fa fa-check"></i><b>3.2.5</b> Predio 5</a></li>
-</ul></li>
-</ul></li>
-<li class="chapter" data-level="4" data-path="indicesVeg.html"><a href="indicesVeg.html"><i class="fa fa-check"></i><b>4</b> Índices vegetacionales</a><ul>
-<li class="chapter" data-level="4.1" data-path="indicesVeg.html"><a href="indicesVeg.html#fundo-rondadero-1"><i class="fa fa-check"></i><b>4.1</b> Fundo Rondadero</a></li>
-<li class="chapter" data-level="4.2" data-path="indicesVeg.html"><a href="indicesVeg.html#predios-fernando-rueda-1"><i class="fa fa-check"></i><b>4.2</b> Predios Fernando Rueda</a><ul>
-<li class="chapter" data-level="4.2.1" data-path="indicesVeg.html"><a href="indicesVeg.html#predio-1-1"><i class="fa fa-check"></i><b>4.2.1</b> Predio 1</a></li>
-<li class="chapter" data-level="4.2.2" data-path="indicesVeg.html"><a href="indicesVeg.html#predio-2-1"><i class="fa fa-check"></i><b>4.2.2</b> Predio 2</a></li>
-<li class="chapter" data-level="4.2.3" data-path="indicesVeg.html"><a href="indicesVeg.html#predio-3-1"><i class="fa fa-check"></i><b>4.2.3</b> Predio 3</a></li>
-<li class="chapter" data-level="4.2.4" data-path="indicesVeg.html"><a href="indicesVeg.html#predio-4-1"><i class="fa fa-check"></i><b>4.2.4</b> Predio 4</a></li>
-<li class="chapter" data-level="4.2.5" data-path="indicesVeg.html"><a href="indicesVeg.html#predio-5-1"><i class="fa fa-check"></i><b>4.2.5</b> Predio 5</a></li>
-</ul></li>
-</ul></li>
+<li class="chapter" data-level="3" data-path="SelecPredios.html"><a href="SelecPredios.html"><i class="fa fa-check"></i><b>3</b> Selección de Predios</a></li>
+<li class="chapter" data-level="4" data-path="indicesVeg.html"><a href="indicesVeg.html"><i class="fa fa-check"></i><b>4</b> Índices vegetacionales</a></li>
 <li class="chapter" data-level="5" data-path="AnalisisDatos.html"><a href="AnalisisDatos.html"><i class="fa fa-check"></i><b>5</b> Análisis de Datos</a><ul>
-<li class="chapter" data-level="5.1" data-path="AnalisisDatos.html"><a href="AnalisisDatos.html#fundo-rondadero-2"><i class="fa fa-check"></i><b>5.1</b> Fundo Rondadero</a></li>
-<li class="chapter" data-level="5.2" data-path="AnalisisDatos.html"><a href="AnalisisDatos.html#predios-fernando-rueda-2"><i class="fa fa-check"></i><b>5.2</b> Predios Fernando Rueda</a><ul>
-<li class="chapter" data-level="5.2.1" data-path="AnalisisDatos.html"><a href="AnalisisDatos.html#predio-1-2"><i class="fa fa-check"></i><b>5.2.1</b> Predio 1</a></li>
-<li class="chapter" data-level="5.2.2" data-path="AnalisisDatos.html"><a href="AnalisisDatos.html#predio-2-2"><i class="fa fa-check"></i><b>5.2.2</b> Predio 2</a></li>
-<li class="chapter" data-level="5.2.3" data-path="AnalisisDatos.html"><a href="AnalisisDatos.html#predio-3-2"><i class="fa fa-check"></i><b>5.2.3</b> Predio 3</a></li>
-<li class="chapter" data-level="5.2.4" data-path="AnalisisDatos.html"><a href="AnalisisDatos.html#predio-4-2"><i class="fa fa-check"></i><b>5.2.4</b> Predio 4</a></li>
-<li class="chapter" data-level="5.2.5" data-path="AnalisisDatos.html"><a href="AnalisisDatos.html#predio-5-2"><i class="fa fa-check"></i><b>5.2.5</b> Predio 5</a></li>
+<li class="chapter" data-level="5.1" data-path="AnalisisDatos.html"><a href="AnalisisDatos.html#fundo-rondadero"><i class="fa fa-check"></i><b>5.1</b> Fundo Rondadero</a></li>
+<li class="chapter" data-level="5.2" data-path="AnalisisDatos.html"><a href="AnalisisDatos.html#predios-fernando-rueda"><i class="fa fa-check"></i><b>5.2</b> Predios Fernando Rueda</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="AnalisisDatos.html"><a href="AnalisisDatos.html#predio-1"><i class="fa fa-check"></i><b>5.2.1</b> Predio 1</a></li>
+<li class="chapter" data-level="5.2.2" data-path="AnalisisDatos.html"><a href="AnalisisDatos.html#predio-2"><i class="fa fa-check"></i><b>5.2.2</b> Predio 2</a></li>
+<li class="chapter" data-level="5.2.3" data-path="AnalisisDatos.html"><a href="AnalisisDatos.html#predio-3"><i class="fa fa-check"></i><b>5.2.3</b> Predio 3</a></li>
+<li class="chapter" data-level="5.2.4" data-path="AnalisisDatos.html"><a href="AnalisisDatos.html#predio-4"><i class="fa fa-check"></i><b>5.2.4</b> Predio 4</a></li>
+<li class="chapter" data-level="5.2.5" data-path="AnalisisDatos.html"><a href="AnalisisDatos.html#predio-5"><i class="fa fa-check"></i><b>5.2.5</b> Predio 5</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="compoIma.html"><a href="compoIma.html"><i class="fa fa-check"></i><b>6</b> Composición de imágenes</a><ul>
+<li class="chapter" data-level="6.1" data-path="compoIma.html"><a href="compoIma.html#fundo-rondadero-1"><i class="fa fa-check"></i><b>6.1</b> Fundo Rondadero</a></li>
+<li class="chapter" data-level="6.2" data-path="compoIma.html"><a href="compoIma.html#predios-fernando-rueda-1"><i class="fa fa-check"></i><b>6.2</b> Predios Fernando Rueda</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="compoIma.html"><a href="compoIma.html#predio-1-1"><i class="fa fa-check"></i><b>6.2.1</b> Predio 1</a></li>
+<li class="chapter" data-level="6.2.2" data-path="compoIma.html"><a href="compoIma.html#predio-2-1"><i class="fa fa-check"></i><b>6.2.2</b> Predio 2</a></li>
+<li class="chapter" data-level="6.2.3" data-path="compoIma.html"><a href="compoIma.html#predio-3-1"><i class="fa fa-check"></i><b>6.2.3</b> Predio 3</a></li>
+<li class="chapter" data-level="6.2.4" data-path="compoIma.html"><a href="compoIma.html#predio-4-1"><i class="fa fa-check"></i><b>6.2.4</b> Predio 4</a></li>
+<li class="chapter" data-level="6.2.5" data-path="compoIma.html"><a href="compoIma.html#predio-5-1"><i class="fa fa-check"></i><b>6.2.5</b> Predio 5</a></li>
 </ul></li>
 </ul></li>
 <li class="divider"></li>
@@ -154,63 +158,63 @@
 <div id="AnalisisDatos" class="section level1">
 <h1><span class="header-section-number">Sección 5</span> Análisis de Datos</h1>
 <p>En esta sección se presentan análisis simplificados derivados de los índices vegetacionales usados,</p>
-<div id="fundo-rondadero-2" class="section level2">
+<div id="fundo-rondadero" class="section level2">
 <h2><span class="header-section-number">5.1</span> Fundo Rondadero</h2>
 <div class="figure" style="text-align: center"><span id="fig:AnalisisFR"></span>
-<div id="htmlwidget-650df7157f7bb71efd9a" style="width:100%;height:500px;" class="highchart html-widget"></div>
-<script type="application/json" data-for="htmlwidget-650df7157f7bb71efd9a">{"x":{"hc_opts":{"title":{"text":"Variación índices vegetacionales"},"yAxis":{"title":{"text":null}},"credits":{"enabled":false},"exporting":{"enabled":false},"plotOptions":{"series":{"turboThreshold":0},"treemap":{"layoutAlgorithm":"squarified"},"bubble":{"minSize":5,"maxSize":25}},"annotationsOptions":{"enabledButtons":false},"tooltip":{"delayForDisplay":10},"chart":{"type":"column"},"xAxis":{"categories":["SR","SAVI","RENDWI","RENDVI","PSSR","PSRI_NIR","NDWI","NDVI","NDVIG","NDII","NDI45","MSI","MSAVI2","GRVI1","GNDVI","EVI2","CRI1","CHLRED","BAI","ARVI","ARI2"]},"series":[{"data":[0.84,0.51,0.95,7.35,0.84,7.72,2.12,0.51,0.38,2.12,0.45,0.57,0.2,4.18,0.36,0.64,1.31,0.42,0.67,0.65,1.44],"name":"Coeficiente de Variación (CV)"}]},"theme":{"chart":{"backgroundColor":"transparent"}},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":[],"debug":false},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-4977916168429c6a3bc4" style="width:100%;height:500px;" class="highchart html-widget"></div>
+<script type="application/json" data-for="htmlwidget-4977916168429c6a3bc4">{"x":{"hc_opts":{"title":{"text":"Variación índices vegetacionales"},"yAxis":{"title":{"text":null}},"credits":{"enabled":false},"exporting":{"enabled":false},"plotOptions":{"series":{"turboThreshold":0},"treemap":{"layoutAlgorithm":"squarified"},"bubble":{"minSize":5,"maxSize":25}},"annotationsOptions":{"enabledButtons":false},"tooltip":{"delayForDisplay":10},"chart":{"type":"column"},"xAxis":{"categories":["SR","SAVI","RENDWI","RENDVI","PSSR","PSRI_NIR","NDWI","NDVI","NDVIG","NDII","NDI45","MSI","MSAVI2","GRVI1","GNDVI","EVI2","CRI1","CHLRED","BAI","ARVI","ARI2"]},"series":[{"data":[0.84,0.51,0.95,7.35,0.84,7.72,2.12,0.51,0.38,2.12,0.45,0.57,0.2,4.18,0.36,0.64,1.31,0.42,0.67,0.65,1.44],"name":"Coeficiente de Variación (CV)"}]},"theme":{"chart":{"backgroundColor":"transparent"}},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":[],"debug":false},"evals":[],"jsHooks":[]}</script>
 <p class="caption">
 Figure 5.1: Índices vegetacionales
 </p>
 </div>
 </div>
-<div id="predios-fernando-rueda-2" class="section level2">
+<div id="predios-fernando-rueda" class="section level2">
 <h2><span class="header-section-number">5.2</span> Predios Fernando Rueda</h2>
-<div id="predio-1-2" class="section level3">
+<div id="predio-1" class="section level3">
 <h3><span class="header-section-number">5.2.1</span> Predio 1</h3>
 <div class="figure" style="text-align: center"><span id="fig:AnalisisFR1"></span>
-<div id="htmlwidget-38724aaf4e9bea9c5e7b" style="width:100%;height:500px;" class="highchart html-widget"></div>
-<script type="application/json" data-for="htmlwidget-38724aaf4e9bea9c5e7b">{"x":{"hc_opts":{"title":{"text":"Variación índices vegetacionales"},"yAxis":{"title":{"text":null}},"credits":{"enabled":false},"exporting":{"enabled":false},"plotOptions":{"series":{"turboThreshold":0},"treemap":{"layoutAlgorithm":"squarified"},"bubble":{"minSize":5,"maxSize":25}},"annotationsOptions":{"enabledButtons":false},"tooltip":{"delayForDisplay":10},"chart":{"type":"column"},"xAxis":{"categories":["SR","SAVI","RENDWI","RENDVI","PSSR","PSRI_NIR","NDWI","NDVI","NDVIG","NDII","NDI45","MSI","MSAVI2","GRVI1","GNDVI","EVI2","CRI1","CHLRED","BAI","ARVI","ARI2","ARI1"]},"series":[{"data":[0.36,0.18,0.59,1.33,0.36,0.73,0.74,0.18,0.18,0.74,0.28,1.07,0.06,0.38,0.2,0.23,1.67,0.52,2.18,0.2,1.46,2.99],"name":"Coeficiente de Variación (CV)"}]},"theme":{"chart":{"backgroundColor":"transparent"}},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":[],"debug":false},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-a5af0047cdf2aa69b602" style="width:100%;height:500px;" class="highchart html-widget"></div>
+<script type="application/json" data-for="htmlwidget-a5af0047cdf2aa69b602">{"x":{"hc_opts":{"title":{"text":"Variación índices vegetacionales"},"yAxis":{"title":{"text":null}},"credits":{"enabled":false},"exporting":{"enabled":false},"plotOptions":{"series":{"turboThreshold":0},"treemap":{"layoutAlgorithm":"squarified"},"bubble":{"minSize":5,"maxSize":25}},"annotationsOptions":{"enabledButtons":false},"tooltip":{"delayForDisplay":10},"chart":{"type":"column"},"xAxis":{"categories":["SR","SAVI","RENDWI","RENDVI","PSSR","PSRI_NIR","NDWI","NDVI","NDVIG","NDII","NDI45","MSI","MSAVI2","GRVI1","GNDVI","EVI2","CRI1","CHLRED","BAI","ARVI","ARI2","ARI1"]},"series":[{"data":[0.36,0.18,0.59,1.33,0.36,0.73,0.74,0.18,0.18,0.74,0.28,1.07,0.06,0.38,0.2,0.23,1.67,0.52,2.18,0.2,1.46,2.99],"name":"Coeficiente de Variación (CV)"}]},"theme":{"chart":{"backgroundColor":"transparent"}},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":[],"debug":false},"evals":[],"jsHooks":[]}</script>
 <p class="caption">
 Figure 5.2: Índices vegetacionales
 </p>
 </div>
 </div>
-<div id="predio-2-2" class="section level3">
+<div id="predio-2" class="section level3">
 <h3><span class="header-section-number">5.2.2</span> Predio 2</h3>
 <div class="figure" style="text-align: center"><span id="fig:AnalisisFR2"></span>
-<div id="htmlwidget-b813543ba1b4d7c1b97b" style="width:100%;height:500px;" class="highchart html-widget"></div>
-<script type="application/json" data-for="htmlwidget-b813543ba1b4d7c1b97b">{"x":{"hc_opts":{"title":{"text":"Variación índices vegetacionales"},"yAxis":{"title":{"text":null}},"credits":{"enabled":false},"exporting":{"enabled":false},"plotOptions":{"series":{"turboThreshold":0},"treemap":{"layoutAlgorithm":"squarified"},"bubble":{"minSize":5,"maxSize":25}},"annotationsOptions":{"enabledButtons":false},"tooltip":{"delayForDisplay":10},"chart":{"type":"column"},"xAxis":{"categories":["SR","SAVI","RENDWI","RENDVI","PSSR","PSRI_NIR","NDWI","NDVI","NDVIG","NDII","NDI45","MSI","MSAVI2","GRVI1","GNDVI","EVI2","CRI1","CHLRED","BAI","ARVI","ARI2","ARI1"]},"series":[{"data":[0.38,0.24,0.57,0.75,0.38,0.61,0.5,0.24,0.18,0.5,0.31,0.39,0.06,0.7,0.17,0.29,0.94,0.41,0.35,0.29,0.99,1.53],"name":"Coeficiente de Variación (CV)"}]},"theme":{"chart":{"backgroundColor":"transparent"}},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":[],"debug":false},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-8951d96cf79d201f6b2c" style="width:100%;height:500px;" class="highchart html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8951d96cf79d201f6b2c">{"x":{"hc_opts":{"title":{"text":"Variación índices vegetacionales"},"yAxis":{"title":{"text":null}},"credits":{"enabled":false},"exporting":{"enabled":false},"plotOptions":{"series":{"turboThreshold":0},"treemap":{"layoutAlgorithm":"squarified"},"bubble":{"minSize":5,"maxSize":25}},"annotationsOptions":{"enabledButtons":false},"tooltip":{"delayForDisplay":10},"chart":{"type":"column"},"xAxis":{"categories":["SR","SAVI","RENDWI","RENDVI","PSSR","PSRI_NIR","NDWI","NDVI","NDVIG","NDII","NDI45","MSI","MSAVI2","GRVI1","GNDVI","EVI2","CRI1","CHLRED","BAI","ARVI","ARI2","ARI1"]},"series":[{"data":[0.38,0.24,0.57,0.75,0.38,0.61,0.5,0.24,0.18,0.5,0.31,0.39,0.06,0.7,0.17,0.29,0.94,0.41,0.35,0.29,0.99,1.53],"name":"Coeficiente de Variación (CV)"}]},"theme":{"chart":{"backgroundColor":"transparent"}},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":[],"debug":false},"evals":[],"jsHooks":[]}</script>
 <p class="caption">
 Figure 5.3: Índices vegetacionales
 </p>
 </div>
 </div>
-<div id="predio-3-2" class="section level3">
+<div id="predio-3" class="section level3">
 <h3><span class="header-section-number">5.2.3</span> Predio 3</h3>
 <div class="figure" style="text-align: center"><span id="fig:AnalisisFR3"></span>
-<div id="htmlwidget-f34503a544ed1f45b124" style="width:100%;height:500px;" class="highchart html-widget"></div>
-<script type="application/json" data-for="htmlwidget-f34503a544ed1f45b124">{"x":{"hc_opts":{"title":{"text":"Variación índices vegetacionales"},"yAxis":{"title":{"text":null}},"credits":{"enabled":false},"exporting":{"enabled":false},"plotOptions":{"series":{"turboThreshold":0},"treemap":{"layoutAlgorithm":"squarified"},"bubble":{"minSize":5,"maxSize":25}},"annotationsOptions":{"enabledButtons":false},"tooltip":{"delayForDisplay":10},"chart":{"type":"column"},"xAxis":{"categories":["SR","SAVI","RENDWI","RENDVI","PSSR","PSRI_NIR","NDWI","NDVI","NDVIG","MSAVI2","GRVI1","GNDVI","EVI2","CRI1","CHLRED","BAI","ARVI","ARI2","ARI1"]},"series":[{"data":[0.24,0.14,1.33,0.68,0.24,0.21,0.13,0.14,0.17,0.05,0.3,0.13,0.18,1.56,0.59,0.41,0.13,1.7,1.35],"name":"Coeficiente de Variación (CV)"}]},"theme":{"chart":{"backgroundColor":"transparent"}},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":[],"debug":false},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-36a5eebead4ed0029778" style="width:100%;height:500px;" class="highchart html-widget"></div>
+<script type="application/json" data-for="htmlwidget-36a5eebead4ed0029778">{"x":{"hc_opts":{"title":{"text":"Variación índices vegetacionales"},"yAxis":{"title":{"text":null}},"credits":{"enabled":false},"exporting":{"enabled":false},"plotOptions":{"series":{"turboThreshold":0},"treemap":{"layoutAlgorithm":"squarified"},"bubble":{"minSize":5,"maxSize":25}},"annotationsOptions":{"enabledButtons":false},"tooltip":{"delayForDisplay":10},"chart":{"type":"column"},"xAxis":{"categories":["SR","SAVI","RENDWI","RENDVI","PSSR","PSRI_NIR","NDWI","NDVI","NDVIG","MSAVI2","GRVI1","GNDVI","EVI2","CRI1","CHLRED","BAI","ARVI","ARI2","ARI1"]},"series":[{"data":[0.24,0.14,1.33,0.68,0.24,0.21,0.13,0.14,0.17,0.05,0.3,0.13,0.18,1.56,0.59,0.41,0.13,1.7,1.35],"name":"Coeficiente de Variación (CV)"}]},"theme":{"chart":{"backgroundColor":"transparent"}},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":[],"debug":false},"evals":[],"jsHooks":[]}</script>
 <p class="caption">
 Figure 5.4: Índices vegetacionales
 </p>
 </div>
 </div>
-<div id="predio-4-2" class="section level3">
+<div id="predio-4" class="section level3">
 <h3><span class="header-section-number">5.2.4</span> Predio 4</h3>
 <div class="figure" style="text-align: center"><span id="fig:AnalisisFR4"></span>
-<div id="htmlwidget-a3d2a6d20cad8e52e425" style="width:100%;height:500px;" class="highchart html-widget"></div>
-<script type="application/json" data-for="htmlwidget-a3d2a6d20cad8e52e425">{"x":{"hc_opts":{"title":{"text":"Variación índices vegetacionales"},"yAxis":{"title":{"text":null}},"credits":{"enabled":false},"exporting":{"enabled":false},"plotOptions":{"series":{"turboThreshold":0},"treemap":{"layoutAlgorithm":"squarified"},"bubble":{"minSize":5,"maxSize":25}},"annotationsOptions":{"enabledButtons":false},"tooltip":{"delayForDisplay":10},"chart":{"type":"column"},"xAxis":{"categories":["SR","SAVI","RENDVI","PSSR","PSRI_NIR","NDWI","NDVI","NDVIG","MSAVI2","GRVI1","GNDVI","EVI2","CRI1","CHLRED","BAI","ARVI","ARI2","ARI1"]},"series":[{"data":[0.17,0.12,0.62,0.17,0.87,0.1,0.12,0.12,0.05,0.86,0.1,0.15,0.83,0.44,0.55,0.18,0.63,9.65],"name":"Coeficiente de Variación (CV)"}]},"theme":{"chart":{"backgroundColor":"transparent"}},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":[],"debug":false},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-600a20c70afdfc83bd59" style="width:100%;height:500px;" class="highchart html-widget"></div>
+<script type="application/json" data-for="htmlwidget-600a20c70afdfc83bd59">{"x":{"hc_opts":{"title":{"text":"Variación índices vegetacionales"},"yAxis":{"title":{"text":null}},"credits":{"enabled":false},"exporting":{"enabled":false},"plotOptions":{"series":{"turboThreshold":0},"treemap":{"layoutAlgorithm":"squarified"},"bubble":{"minSize":5,"maxSize":25}},"annotationsOptions":{"enabledButtons":false},"tooltip":{"delayForDisplay":10},"chart":{"type":"column"},"xAxis":{"categories":["SR","SAVI","RENDVI","PSSR","PSRI_NIR","NDWI","NDVI","NDVIG","MSAVI2","GRVI1","GNDVI","EVI2","CRI1","CHLRED","BAI","ARVI","ARI2","ARI1"]},"series":[{"data":[0.17,0.12,0.62,0.17,0.87,0.1,0.12,0.12,0.05,0.86,0.1,0.15,0.83,0.44,0.55,0.18,0.63,9.65],"name":"Coeficiente de Variación (CV)"}]},"theme":{"chart":{"backgroundColor":"transparent"}},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":[],"debug":false},"evals":[],"jsHooks":[]}</script>
 <p class="caption">
 Figure 5.5: Índices vegetacionales
 </p>
 </div>
 </div>
-<div id="predio-5-2" class="section level3">
+<div id="predio-5" class="section level3">
 <h3><span class="header-section-number">5.2.5</span> Predio 5</h3>
 <div class="figure" style="text-align: center"><span id="fig:AnalisisFR5"></span>
-<div id="htmlwidget-e8ba25ce4624b42028a6" style="width:100%;height:500px;" class="highchart html-widget"></div>
-<script type="application/json" data-for="htmlwidget-e8ba25ce4624b42028a6">{"x":{"hc_opts":{"title":{"text":"Variación índices vegetacionales"},"yAxis":{"title":{"text":null}},"credits":{"enabled":false},"exporting":{"enabled":false},"plotOptions":{"series":{"turboThreshold":0},"treemap":{"layoutAlgorithm":"squarified"},"bubble":{"minSize":5,"maxSize":25}},"annotationsOptions":{"enabledButtons":false},"tooltip":{"delayForDisplay":10},"chart":{"type":"column"},"xAxis":{"categories":["SR","SAVI","RENDWI","RENDVI","PSSR","PSRI_NIR","NDWI","NDVI","NDVIG","MSAVI2","GRVI1","GNDVI","EVI2","CHLRED","BAI","ARVI","ARI1"]},"series":[{"data":[0.18,0.28,0.55,0.28,0.18,0.44,0.12,0.28,0.19,0.09,0.38,0.12,0.32,0.13,0.14,0.61,0.63],"name":"Coeficiente de Variación (CV)"}]},"theme":{"chart":{"backgroundColor":"transparent"}},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":[],"debug":false},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-6fa5163b16e84deba2e1" style="width:100%;height:500px;" class="highchart html-widget"></div>
+<script type="application/json" data-for="htmlwidget-6fa5163b16e84deba2e1">{"x":{"hc_opts":{"title":{"text":"Variación índices vegetacionales"},"yAxis":{"title":{"text":null}},"credits":{"enabled":false},"exporting":{"enabled":false},"plotOptions":{"series":{"turboThreshold":0},"treemap":{"layoutAlgorithm":"squarified"},"bubble":{"minSize":5,"maxSize":25}},"annotationsOptions":{"enabledButtons":false},"tooltip":{"delayForDisplay":10},"chart":{"type":"column"},"xAxis":{"categories":["SR","SAVI","RENDWI","RENDVI","PSSR","PSRI_NIR","NDWI","NDVI","NDVIG","MSAVI2","GRVI1","GNDVI","EVI2","CHLRED","BAI","ARVI","ARI1"]},"series":[{"data":[0.18,0.28,0.55,0.28,0.18,0.44,0.12,0.28,0.19,0.09,0.38,0.12,0.32,0.13,0.14,0.61,0.63],"name":"Coeficiente de Variación (CV)"}]},"theme":{"chart":{"backgroundColor":"transparent"}},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":[],"debug":false},"evals":[],"jsHooks":[]}</script>
 <p class="caption">
 Figure 5.6: Índices vegetacionales
 </p>
@@ -224,8 +228,8 @@ Figure 5.6: Índices vegetacionales
           </div>
         </div>
       </div>
-<a href="indicesVeg.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="indicesVeg.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="compoIma.html" class="navigation navigation-next " aria-label="Next page""><i class="fa fa-angle-right"></i></a>
 
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>

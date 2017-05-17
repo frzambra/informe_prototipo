@@ -26,15 +26,15 @@
 <meta name="author" content="SmartCrop">
 
 
-<meta name="date" content="2017-05-01">
+<meta name="date" content="2017-05-15">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="DescripcionVIs.html">
-<link rel="next" href="indicesVeg.html">
+<link rel="prev" href="AnalisisDatos.html">
+
 
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -50,6 +50,18 @@
 
 
 <script src="libs/htmlwidgets-0.8/htmlwidgets.js"></script>
+<link href="libs/leaflet-0.7.7/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-0.7.7/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<link href="libs/leaflet-label-0.2.2/leaflet.label.css" rel="stylesheet" />
+<script src="libs/leaflet-label-0.2.2/leaflet.label.js"></script>
+<script src="libs/Proj4Leaflet-0.7.2/proj4-compressed.js"></script>
+<script src="libs/Proj4Leaflet-0.7.2/proj4leaflet.js"></script>
+<script src="libs/leaflet-binding-1.1.0.9000/leaflet.js"></script>
+<link href="libs/draw-0.1.0/leaflet.draw.css" rel="stylesheet" />
+<script src="libs/draw-0.1.0/leaflet.draw-src.js"></script>
+<script src="libs/draw-0.1.0/Leaflet.draw.drag-src.js"></script>
+<script src="libs/draw-0.1.0/draw-bindings.js"></script>
 <script src="libs/proj4js-2.3.15/proj4.js"></script>
 <link href="libs/highcharts-5.0.6/css/motion.css" rel="stylesheet" />
 <script src="libs/highcharts-5.0.6/highstock.js"></script>
@@ -101,34 +113,26 @@
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Resumen</a></li>
 <li class="chapter" data-level="2" data-path="DescripcionVIs.html"><a href="DescripcionVIs.html"><i class="fa fa-check"></i><b>2</b> Descripción Índices Vegetacionales</a></li>
-<li class="chapter" data-level="3" data-path="compoIma.html"><a href="compoIma.html"><i class="fa fa-check"></i><b>3</b> Composición de imágenes</a><ul>
-<li class="chapter" data-level="3.1" data-path="compoIma.html"><a href="compoIma.html#fundo-rondadero"><i class="fa fa-check"></i><b>3.1</b> Fundo Rondadero</a></li>
-<li class="chapter" data-level="3.2" data-path="compoIma.html"><a href="compoIma.html#predios-fernando-rueda"><i class="fa fa-check"></i><b>3.2</b> Predios Fernando Rueda</a><ul>
-<li class="chapter" data-level="3.2.1" data-path="compoIma.html"><a href="compoIma.html#predio-1"><i class="fa fa-check"></i><b>3.2.1</b> Predio 1</a></li>
-<li class="chapter" data-level="3.2.2" data-path="compoIma.html"><a href="compoIma.html#predio-2"><i class="fa fa-check"></i><b>3.2.2</b> Predio 2</a></li>
-<li class="chapter" data-level="3.2.3" data-path="compoIma.html"><a href="compoIma.html#predio-3"><i class="fa fa-check"></i><b>3.2.3</b> Predio 3</a></li>
-<li class="chapter" data-level="3.2.4" data-path="compoIma.html"><a href="compoIma.html#predio-4"><i class="fa fa-check"></i><b>3.2.4</b> Predio 4</a></li>
-<li class="chapter" data-level="3.2.5" data-path="compoIma.html"><a href="compoIma.html#predio-5"><i class="fa fa-check"></i><b>3.2.5</b> Predio 5</a></li>
-</ul></li>
-</ul></li>
-<li class="chapter" data-level="4" data-path="indicesVeg.html"><a href="indicesVeg.html"><i class="fa fa-check"></i><b>4</b> Índices vegetacionales</a><ul>
-<li class="chapter" data-level="4.1" data-path="indicesVeg.html"><a href="indicesVeg.html#fundo-rondadero-1"><i class="fa fa-check"></i><b>4.1</b> Fundo Rondadero</a></li>
-<li class="chapter" data-level="4.2" data-path="indicesVeg.html"><a href="indicesVeg.html#predios-fernando-rueda-1"><i class="fa fa-check"></i><b>4.2</b> Predios Fernando Rueda</a><ul>
-<li class="chapter" data-level="4.2.1" data-path="indicesVeg.html"><a href="indicesVeg.html#predio-1-1"><i class="fa fa-check"></i><b>4.2.1</b> Predio 1</a></li>
-<li class="chapter" data-level="4.2.2" data-path="indicesVeg.html"><a href="indicesVeg.html#predio-2-1"><i class="fa fa-check"></i><b>4.2.2</b> Predio 2</a></li>
-<li class="chapter" data-level="4.2.3" data-path="indicesVeg.html"><a href="indicesVeg.html#predio-3-1"><i class="fa fa-check"></i><b>4.2.3</b> Predio 3</a></li>
-<li class="chapter" data-level="4.2.4" data-path="indicesVeg.html"><a href="indicesVeg.html#predio-4-1"><i class="fa fa-check"></i><b>4.2.4</b> Predio 4</a></li>
-<li class="chapter" data-level="4.2.5" data-path="indicesVeg.html"><a href="indicesVeg.html#predio-5-1"><i class="fa fa-check"></i><b>4.2.5</b> Predio 5</a></li>
-</ul></li>
-</ul></li>
+<li class="chapter" data-level="3" data-path="SelecPredios.html"><a href="SelecPredios.html"><i class="fa fa-check"></i><b>3</b> Selección de Predios</a></li>
+<li class="chapter" data-level="4" data-path="indicesVeg.html"><a href="indicesVeg.html"><i class="fa fa-check"></i><b>4</b> Índices vegetacionales</a></li>
 <li class="chapter" data-level="5" data-path="AnalisisDatos.html"><a href="AnalisisDatos.html"><i class="fa fa-check"></i><b>5</b> Análisis de Datos</a><ul>
-<li class="chapter" data-level="5.1" data-path="AnalisisDatos.html"><a href="AnalisisDatos.html#fundo-rondadero-2"><i class="fa fa-check"></i><b>5.1</b> Fundo Rondadero</a></li>
-<li class="chapter" data-level="5.2" data-path="AnalisisDatos.html"><a href="AnalisisDatos.html#predios-fernando-rueda-2"><i class="fa fa-check"></i><b>5.2</b> Predios Fernando Rueda</a><ul>
-<li class="chapter" data-level="5.2.1" data-path="AnalisisDatos.html"><a href="AnalisisDatos.html#predio-1-2"><i class="fa fa-check"></i><b>5.2.1</b> Predio 1</a></li>
-<li class="chapter" data-level="5.2.2" data-path="AnalisisDatos.html"><a href="AnalisisDatos.html#predio-2-2"><i class="fa fa-check"></i><b>5.2.2</b> Predio 2</a></li>
-<li class="chapter" data-level="5.2.3" data-path="AnalisisDatos.html"><a href="AnalisisDatos.html#predio-3-2"><i class="fa fa-check"></i><b>5.2.3</b> Predio 3</a></li>
-<li class="chapter" data-level="5.2.4" data-path="AnalisisDatos.html"><a href="AnalisisDatos.html#predio-4-2"><i class="fa fa-check"></i><b>5.2.4</b> Predio 4</a></li>
-<li class="chapter" data-level="5.2.5" data-path="AnalisisDatos.html"><a href="AnalisisDatos.html#predio-5-2"><i class="fa fa-check"></i><b>5.2.5</b> Predio 5</a></li>
+<li class="chapter" data-level="5.1" data-path="AnalisisDatos.html"><a href="AnalisisDatos.html#fundo-rondadero"><i class="fa fa-check"></i><b>5.1</b> Fundo Rondadero</a></li>
+<li class="chapter" data-level="5.2" data-path="AnalisisDatos.html"><a href="AnalisisDatos.html#predios-fernando-rueda"><i class="fa fa-check"></i><b>5.2</b> Predios Fernando Rueda</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="AnalisisDatos.html"><a href="AnalisisDatos.html#predio-1"><i class="fa fa-check"></i><b>5.2.1</b> Predio 1</a></li>
+<li class="chapter" data-level="5.2.2" data-path="AnalisisDatos.html"><a href="AnalisisDatos.html#predio-2"><i class="fa fa-check"></i><b>5.2.2</b> Predio 2</a></li>
+<li class="chapter" data-level="5.2.3" data-path="AnalisisDatos.html"><a href="AnalisisDatos.html#predio-3"><i class="fa fa-check"></i><b>5.2.3</b> Predio 3</a></li>
+<li class="chapter" data-level="5.2.4" data-path="AnalisisDatos.html"><a href="AnalisisDatos.html#predio-4"><i class="fa fa-check"></i><b>5.2.4</b> Predio 4</a></li>
+<li class="chapter" data-level="5.2.5" data-path="AnalisisDatos.html"><a href="AnalisisDatos.html#predio-5"><i class="fa fa-check"></i><b>5.2.5</b> Predio 5</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="compoIma.html"><a href="compoIma.html"><i class="fa fa-check"></i><b>6</b> Composición de imágenes</a><ul>
+<li class="chapter" data-level="6.1" data-path="compoIma.html"><a href="compoIma.html#fundo-rondadero-1"><i class="fa fa-check"></i><b>6.1</b> Fundo Rondadero</a></li>
+<li class="chapter" data-level="6.2" data-path="compoIma.html"><a href="compoIma.html#predios-fernando-rueda-1"><i class="fa fa-check"></i><b>6.2</b> Predios Fernando Rueda</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="compoIma.html"><a href="compoIma.html#predio-1-1"><i class="fa fa-check"></i><b>6.2.1</b> Predio 1</a></li>
+<li class="chapter" data-level="6.2.2" data-path="compoIma.html"><a href="compoIma.html#predio-2-1"><i class="fa fa-check"></i><b>6.2.2</b> Predio 2</a></li>
+<li class="chapter" data-level="6.2.3" data-path="compoIma.html"><a href="compoIma.html#predio-3-1"><i class="fa fa-check"></i><b>6.2.3</b> Predio 3</a></li>
+<li class="chapter" data-level="6.2.4" data-path="compoIma.html"><a href="compoIma.html#predio-4-1"><i class="fa fa-check"></i><b>6.2.4</b> Predio 4</a></li>
+<li class="chapter" data-level="6.2.5" data-path="compoIma.html"><a href="compoIma.html#predio-5-1"><i class="fa fa-check"></i><b>6.2.5</b> Predio 5</a></li>
 </ul></li>
 </ul></li>
 <li class="divider"></li>
@@ -152,61 +156,61 @@
 
             <section class="normal" id="section-">
 <div id="compoIma" class="section level1">
-<h1><span class="header-section-number">Sección 3</span> Composición de imágenes</h1>
+<h1><span class="header-section-number">Sección 6</span> Composición de imágenes</h1>
 <p>En esta sección se presenta la composición de imagenes de color verdadero junto con 3 composiciones que permiten resaltar caracteristicas de la vegetación.</p>
-<div id="fundo-rondadero" class="section level2">
-<h2><span class="header-section-number">3.1</span> Fundo Rondadero</h2>
+<div id="fundo-rondadero-1" class="section level2">
+<h2><span class="header-section-number">6.1</span> Fundo Rondadero</h2>
 <div class="figure" style="text-align: center"><span id="fig:nice-fig"></span>
 <img src="bookdown-demo_files/figure-html/nice-fig-1.png" alt="Composición de color" width="100%" />
 <p class="caption">
-Figure 3.1: Composición de color
+Figure 6.1: Composición de color
 </p>
 </div>
 </div>
-<div id="predios-fernando-rueda" class="section level2">
-<h2><span class="header-section-number">3.2</span> Predios Fernando Rueda</h2>
-<div id="predio-1" class="section level3">
-<h3><span class="header-section-number">3.2.1</span> Predio 1</h3>
+<div id="predios-fernando-rueda-1" class="section level2">
+<h2><span class="header-section-number">6.2</span> Predios Fernando Rueda</h2>
+<div id="predio-1-1" class="section level3">
+<h3><span class="header-section-number">6.2.1</span> Predio 1</h3>
 <div class="figure" style="text-align: center"><span id="fig:nice-fig2"></span>
 <img src="bookdown-demo_files/figure-html/nice-fig2-1.png" alt="Composición de color" width="100%" />
 <p class="caption">
-Figure 3.2: Composición de color
+Figure 6.2: Composición de color
 </p>
 </div>
 </div>
-<div id="predio-2" class="section level3">
-<h3><span class="header-section-number">3.2.2</span> Predio 2</h3>
+<div id="predio-2-1" class="section level3">
+<h3><span class="header-section-number">6.2.2</span> Predio 2</h3>
 <div class="figure" style="text-align: center"><span id="fig:nice-fig3"></span>
 <img src="bookdown-demo_files/figure-html/nice-fig3-1.png" alt="Composición de color" width="100%" />
 <p class="caption">
-Figure 3.3: Composición de color
+Figure 6.3: Composición de color
 </p>
 </div>
 </div>
-<div id="predio-3" class="section level3">
-<h3><span class="header-section-number">3.2.3</span> Predio 3</h3>
+<div id="predio-3-1" class="section level3">
+<h3><span class="header-section-number">6.2.3</span> Predio 3</h3>
 <div class="figure" style="text-align: center"><span id="fig:nice-fig4"></span>
 <img src="bookdown-demo_files/figure-html/nice-fig4-1.png" alt="Composición de color" width="100%" />
 <p class="caption">
-Figure 3.4: Composición de color
+Figure 6.4: Composición de color
 </p>
 </div>
 </div>
-<div id="predio-4" class="section level3">
-<h3><span class="header-section-number">3.2.4</span> Predio 4</h3>
+<div id="predio-4-1" class="section level3">
+<h3><span class="header-section-number">6.2.4</span> Predio 4</h3>
 <div class="figure" style="text-align: center"><span id="fig:nice-fig5"></span>
 <img src="bookdown-demo_files/figure-html/nice-fig5-1.png" alt="Composición de color" width="100%" />
 <p class="caption">
-Figure 3.5: Composición de color
+Figure 6.5: Composición de color
 </p>
 </div>
 </div>
-<div id="predio-5" class="section level3">
-<h3><span class="header-section-number">3.2.5</span> Predio 5</h3>
+<div id="predio-5-1" class="section level3">
+<h3><span class="header-section-number">6.2.5</span> Predio 5</h3>
 <div class="figure" style="text-align: center"><span id="fig:nice-fig6"></span>
 <img src="bookdown-demo_files/figure-html/nice-fig6-1.png" alt="Composición de color" width="100%" />
 <p class="caption">
-Figure 3.6: Composición de color
+Figure 6.6: Composición de color
 </p>
 </div>
 
@@ -218,8 +222,8 @@ Figure 3.6: Composición de color
           </div>
         </div>
       </div>
-<a href="DescripcionVIs.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="indicesVeg.html" class="navigation navigation-next " aria-label="Next page""><i class="fa fa-angle-right"></i></a>
+<a href="AnalisisDatos.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
 
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
@@ -247,7 +251,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/02-CompoIma.Rmd",
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/Back_02-CompoIma.Rmd",
 "text": "Edit"
 },
 "download": ["bookdown-demo.pdf", "bookdown-demo.epub"],

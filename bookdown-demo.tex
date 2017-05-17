@@ -84,7 +84,7 @@
   \postauthor{\par}
   \predate{\centering\large\emph}
   \postdate{\par}
-  \date{2017-05-01}
+  \date{2017-05-15}
 
 \usepackage{booktabs}
 \usepackage{amsthm}
@@ -104,13 +104,16 @@
 }
 \chapter{Resumen}\label{resumen}
 
-Este documento corresponde a un informe prototipo de análisis
-vegetacional realizado en base a información satelital para una fecha
-puntual como soporte a la toma de decisiones para los agricultores. La
-fecha de captura de la imágenes satelitales fué el \textbf{20 de
-diciembre 2016}. En este prototipo se consideraron seis predios ubicados
-en la comuna de San Carlos correspondientes a cultivos de maiz y
-cerezos. El informe esta estructurado con las secciones:
+Este documento corresponde a un informe prototipo para presentar como
+información complementaria para postulación a Proyecto PRAE-BíoBío. El
+informe presenta los resultados obtenidos a nivel de desarrollo de
+pre-servicio mínimo viable del análisis de las condiciones
+vegetacionales en un predio en base a información satelital como soporte
+a la toma de decisiones para los agricultores. En este caso se considera
+una fecha puntual, correspondiente al \textbf{20 de diciembre 2016}. En
+este prototipo se considera un predio en el cual se cultiva Maiz ubicado
+en la comuna de San Carlos. El informe esta estructurado con las
+secciones:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -118,7 +121,7 @@ cerezos. El informe esta estructurado con las secciones:
 \item
   \protect\hyperlink{DescripcionVIs}{Descripción índices vegetacionales}
 \item
-  \protect\hyperlink{DescipcionVIs}{Composición de imágenes}
+  \protect\hyperlink{SelecPredios}{Selección de predios}
 \item
   \protect\hyperlink{indicesVeg}{Índices vegetacionales}
 \item
@@ -135,99 +138,37 @@ cultivos.
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  \textbf{Relación simple (SR):} Well known and often used index,
-  described as the ratio of light that is scattered in the near
-  infra-red range to that which is absorbed in the red range. Values
-  description: The range of values is from 0 to more than 30, where
-  healthy vegetation generally falls between values of 2 to 8.
+  \textbf{Índice de vegetación de diferencia normalizada (NDVI):} Es un
+  índice usado para estimar la cantidad, calidad y desarrollo de la
+  vegetación con base a la medición, por medio de sensores remotos .
 \item
-  \textbf{Índice de Vegetación ajustado al Suelo (SAVI):}
-\item
-  \textbf{Borde Rojo - Índice Normalizado de Diferencia de Agua
-  (RE-NDWI:}
+  \textbf{Índice diferencial de agua normalizado (NDWI):} Se utiliza
+  como una medida de la cantidad de agua que posee la vegetación o el
+  nivel de saturación de humedad que posee el suelo.
 \item
   \textbf{Borde Rojo - Índice Normalizado de Diferencia de Vegetación
-  (RE-NDVI):}
+  (RE-NDVI):} Se utiliza como una medida de si la vegetación se
+  encuentra saludable. Es similar al NDVI, pero utiliza las bandas de
+  infrarojo cercano y de borde rojo.
 \end{enumerate}
 
-\chapter{Composición de imágenes}\label{compoIma}
+\hypertarget{SelecPredios}{\chapter{Selección de
+Predios}\label{SelecPredios}}
 
-En esta sección se presenta la composición de imagenes de color
-verdadero junto con 3 composiciones que permiten resaltar
-caracteristicas de la vegetación.
-
-\section{Fundo Rondadero}\label{fundo-rondadero}
+En esta sección se muestra la forma en la cual el cliente podrá
+seleccionar su área de interes materia del servicio solicitado.
 
 \begin{figure}
 
-{\centering \includegraphics[width=1\linewidth]{bookdown-demo_files/figure-latex/nice-fig-1} 
+{\centering \includegraphics[width=1\linewidth]{bookdown-demo_files/figure-latex/selection-1} 
 
 }
 
-\caption[one plot]{Composición de color}\label{fig:nice-fig}
-\end{figure}
-
-\section{Predios Fernando Rueda}\label{predios-fernando-rueda}
-
-\subsection{Predio 1}\label{predio-1}
-
-\begin{figure}
-
-{\centering \includegraphics[width=1\linewidth]{bookdown-demo_files/figure-latex/nice-fig2-1} 
-
-}
-
-\caption[one plot]{Composición de color}\label{fig:nice-fig2}
-\end{figure}
-
-\subsection{Predio 2}\label{predio-2}
-
-\begin{figure}
-
-{\centering \includegraphics[width=1\linewidth]{bookdown-demo_files/figure-latex/nice-fig3-1} 
-
-}
-
-\caption[one plot]{Composición de color}\label{fig:nice-fig3}
-\end{figure}
-
-\subsection{Predio 3}\label{predio-3}
-
-\begin{figure}
-
-{\centering \includegraphics[width=1\linewidth]{bookdown-demo_files/figure-latex/nice-fig4-1} 
-
-}
-
-\caption[one plot]{Composición de color}\label{fig:nice-fig4}
-\end{figure}
-
-\subsection{Predio 4}\label{predio-4}
-
-\begin{figure}
-
-{\centering \includegraphics[width=1\linewidth]{bookdown-demo_files/figure-latex/nice-fig5-1} 
-
-}
-
-\caption[one plot]{Composición de color}\label{fig:nice-fig5}
-\end{figure}
-
-\subsection{Predio 5}\label{predio-5}
-
-\begin{figure}
-
-{\centering \includegraphics[width=1\linewidth]{bookdown-demo_files/figure-latex/nice-fig6-1} 
-
-}
-
-\caption[one plot]{Composición de color}\label{fig:nice-fig6}
+\caption{Índices vegetacionales}\label{fig:selection}
 \end{figure}
 
 \hypertarget{indicesVeg}{\chapter{Índices
 vegetacionales}\label{indicesVeg}}
-
-\section{Fundo Rondadero}\label{fundo-rondadero-1}
 
 \begin{figure}
 
@@ -236,137 +177,6 @@ vegetacionales}\label{indicesVeg}}
 }
 
 \caption{Índices vegetacionales}\label{fig:Fron}
-\end{figure}
-
-\section{Predios Fernando Rueda}\label{predios-fernando-rueda-1}
-
-\subsection{Predio 1}\label{predio-1-1}
-
-\begin{figure}
-
-{\centering \includegraphics[width=1\linewidth]{bookdown-demo_files/figure-latex/FR1vis-1} 
-
-}
-
-\caption{Índices vegetacionales}\label{fig:FR1vis}
-\end{figure}
-
-\subsection{Predio 2}\label{predio-2-1}
-
-\begin{figure}
-
-{\centering \includegraphics[width=1\linewidth]{bookdown-demo_files/figure-latex/FR2vis-1} 
-
-}
-
-\caption{Índices vegetacionales}\label{fig:FR2vis}
-\end{figure}
-
-\subsection{Predio 3}\label{predio-3-1}
-
-\begin{figure}
-
-{\centering \includegraphics[width=1\linewidth]{bookdown-demo_files/figure-latex/FR3vis-1} 
-
-}
-
-\caption{Índices vegetacionales}\label{fig:FR3vis}
-\end{figure}
-
-\subsection{Predio 4}\label{predio-4-1}
-
-\begin{figure}
-
-{\centering \includegraphics[width=1\linewidth]{bookdown-demo_files/figure-latex/FR4vis-1} 
-
-}
-
-\caption{Índices vegetacionales}\label{fig:FR4vis}
-\end{figure}
-
-\subsection{Predio 5}\label{predio-5-1}
-
-\begin{figure}
-
-{\centering \includegraphics[width=1\linewidth]{bookdown-demo_files/figure-latex/FR5vis-1} 
-
-}
-
-\caption{Índices vegetacionales}\label{fig:FR5vis}
-\end{figure}
-
-\hypertarget{AnalisisDatos}{\chapter{Análisis de
-Datos}\label{AnalisisDatos}}
-
-En esta sección se presentan análisis simplificados derivados de los
-índices vegetacionales usados,
-
-\section{Fundo Rondadero}\label{fundo-rondadero-2}
-
-\begin{figure}
-
-{\centering \includegraphics[width=1\linewidth]{bookdown-demo_files/figure-latex/AnalisisFR-1} 
-
-}
-
-\caption{Índices vegetacionales}\label{fig:AnalisisFR}
-\end{figure}
-
-\section{Predios Fernando Rueda}\label{predios-fernando-rueda-2}
-
-\subsection{Predio 1}\label{predio-1-2}
-
-\begin{figure}
-
-{\centering \includegraphics[width=1\linewidth]{bookdown-demo_files/figure-latex/AnalisisFR1-1} 
-
-}
-
-\caption{Índices vegetacionales}\label{fig:AnalisisFR1}
-\end{figure}
-
-\subsection{Predio 2}\label{predio-2-2}
-
-\begin{figure}
-
-{\centering \includegraphics[width=1\linewidth]{bookdown-demo_files/figure-latex/AnalisisFR2-1} 
-
-}
-
-\caption{Índices vegetacionales}\label{fig:AnalisisFR2}
-\end{figure}
-
-\subsection{Predio 3}\label{predio-3-2}
-
-\begin{figure}
-
-{\centering \includegraphics[width=1\linewidth]{bookdown-demo_files/figure-latex/AnalisisFR3-1} 
-
-}
-
-\caption{Índices vegetacionales}\label{fig:AnalisisFR3}
-\end{figure}
-
-\subsection{Predio 4}\label{predio-4-2}
-
-\begin{figure}
-
-{\centering \includegraphics[width=1\linewidth]{bookdown-demo_files/figure-latex/AnalisisFR4-1} 
-
-}
-
-\caption{Índices vegetacionales}\label{fig:AnalisisFR4}
-\end{figure}
-
-\subsection{Predio 5}\label{predio-5-2}
-
-\begin{figure}
-
-{\centering \includegraphics[width=1\linewidth]{bookdown-demo_files/figure-latex/AnalisisFR5-1} 
-
-}
-
-\caption{Índices vegetacionales}\label{fig:AnalisisFR5}
 \end{figure}
 
 \bibliography{packages.bib,book.bib}
